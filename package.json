@@ -1,0 +1,19 @@
+{
+  "name": "newtons-cradle",
+  "version": "1.0.0",
+  "description": "A-Frame project representing Newton's Cradle",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sam-parsons/newtons-cradle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sam-parsons/newtons-cradle/issues"
+  },
+  "homepage": "https://github.com/sam-parsons/newtons-cradle#readme"
+}

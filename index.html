@@ -15,6 +15,7 @@ Notes
     <script src="https://unpkg.com/aframe-mirror-component/dist/aframe-mirror-component.min.js"></script>
     <script src="https://rawgit.com/protyze/aframe-curve-component/master/dist/aframe-curve-component.min.js"></script>
     <script src="https://rawgit.com/protyze/aframe-alongpath-component/master/dist/aframe-alongpath-component.min.js"></script>
+    <script src="https://rawgit.com/andreasplesch/aframe-meshline-component/master/dist/aframe-meshline-component.min.js"></script>
   </head>
   <body>
     <a-scene>
@@ -38,7 +39,7 @@ Notes
             <a-curve-point position="-5.68 1.174 -10"></a-curve-point>
             <a-curve-point position="-6.08 1.272 -10"></a-curve-point>
             <a-curve-point position="-6.48 1.391 -10"></a-curve-point>
-            <a-curve-point position="-7.248 1.531 -10"></a-curve-point>
+            <a-curve-point position="-7.048 1.531 -10"></a-curve-point>
             <a-curve-point position="-7.632 1.691 -10"></a-curve-point>
             <a-curve-point position="-8 1.871 -10"></a-curve-point>
             <a-curve-point position="-8.36 2.071 -10"></a-curve-point>
@@ -73,6 +74,37 @@ Notes
             <a-curve-point position="4 1 -10"></a-curve-point>
             <a-curve-point position="4 1 -10"></a-curve-point>
         </a-curve>
+        <a-curve id="track3">
+            <!--<a-curve-point meshline="lineWidth: 2; path: -4 1 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -4.416 1.010 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -4.84 1.043 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -5.28 1.098 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -5.68 1.174 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -6.08 1.272 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -6.48 1.391 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -7.048 1.531 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -7.632 1.691 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -8 1.871 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -8.36 2.071 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -8.72 2.29 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -9.04 2.527 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -9.36 2.782 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -9.68 3.054 -10; color: #000"></a-curve-point>--><!--mid-->
+            <!--<a-curve-point meshline="lineWidth: 2; path: -9.36 2.782 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -9.04 2.527 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -8.72 2.29 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -8.36 2.071 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -8 1.871 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -7.632 1.691 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -7.248 1.531 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -6.48 1.391 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -6.08 1.272 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -5.68 1.174 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -5.28 1.098 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -4.84 1.043 -10; color: #000"></a-curve-point>
+            <a-curve-point meshline="lineWidth: 2; path: -4.416 1.010 -10; color: #000"></a-curve-point>-->
+        </a-curve>
+
 
         <!-- five balls -->
         <a-entity scale="1 1 1" 
@@ -115,18 +147,23 @@ Notes
             <a-animation attribute="position" from="5.5 1.2 -10" to="4 1 -10" dur="800" direction="normal" delay="4000" repeat="indefinte"></a-animation>-->
         </a-entity>
 
+        <!-- lines for balls -->
+        <a-entity meshline="lineWidth: 2; path: -4 1 -10, -4 8.5 -10; color: #999"
+                  rotation="0 0 0">       
+        </a-entity>
+
         <!-- strings for balls -->
-        <a-cylinder height="8" radius="0.015" color="white" position="0 4.5 -10">
+        <!--<a-cylinder height="8" radius="0.015" color="white" position="0 4.5 -10">
         </a-cylinder>
         <a-cylinder height="8" radius="0.015" color="white" position="2 6.5 -10"></a-cylinder>
         <a-cylinder height="8" radius="0.015" color="white" position="-2 4 -10"></a-cylinder>
         <a-cylinder height="8" radius="0.015" color="white" position="4 5 -10">
-            <!--<a-animation property="position" to="7 2.25 -10" dur="1000" delay="4000"></a-animation>
-            <a-animation property="rotation" to="0 0 30" dur="1000" delay="4000"></a-animation>-->
+            <a-animation property="position" to="7 2.25 -10" dur="1000" delay="4000"></a-animation>
+            <a-animation property="rotation" to="0 0 30" dur="1000" delay="4000"></a-animation>
         </a-cylinder>
-        <a-cylinder height="8" radius="0.015" color="white" position="-4 4.5 -10">
+        <a-cylinder height="8" radius="0.015" color="white" position="-6.5 5.8 -10" rotation="0 0 -45">
 
-        </a-cylinder>
+        </a-cylinder>-->
 
 
         <!-- logo -->

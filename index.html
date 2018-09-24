@@ -1,6 +1,5 @@
 <!--
 Notes
-
 - Rotate strings for uniform appearance
 - Even up timing of end pieces
 -->
@@ -15,6 +14,7 @@ Notes
     <script src="https://rawgit.com/protyze/aframe-curve-component/master/dist/aframe-curve-component.min.js"></script>
     <script src="https://rawgit.com/protyze/aframe-alongpath-component/master/dist/aframe-alongpath-component.min.js"></script>
     <script src="https://rawgit.com/andreasplesch/aframe-meshline-component/master/dist/aframe-meshline-component.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
 </head>
 <body>
     <a-scene>
@@ -202,9 +202,12 @@ Notes
         </a-entity>
 
         <!-- line for ball -->
-        <a-entity meshline="lineWidth: 2; path: -4 1 -10, -4 8.5 -10; color: #999"
-                rotation="0 0 0">       
-        </a-entity>
+        <!--<a-entity meshline="lineWidth: 2; path: -4 1 -10, -4 16 -10; color: #999"
+                rotation="0 0 0"
+                position="0 0 0">
+            <a-animation attribute="position" to="-6.8 0 0" delay="2000" dur="2000"></a-animation>
+            <a-animation attribute="rotation" to="0 0 -45" delay="2000" dur="2000"></a-animation>       
+        </a-entity>-->
 
         <!-- string for ball -->
 
@@ -212,13 +215,11 @@ Notes
         </a-cylinder>
         <a-cylinder height="8" radius="0.015" color="white" position="2 6.5 -10"></a-cylinder>
         <a-cylinder height="8" radius="0.015" color="white" position="-2 4 -10"></a-cylinder>-->
-        <a-cylinder height="8" radius="0.015" color="white" position="4 5 -10">
-            <!--<a-animation property="position" to="7 2.25 -10" dur="1000" delay="4000"></a-animation>
-            <a-animation property="rotation" to="0 0 30" dur="1000" delay="4000"></a-animation>-->
-        </a-cylinder>
+        <!--<a-cylinder height="16" radius="0.015" color="white" position="4 8.5 -10">
+            <a-animation property="position" to="7 2.25 -10" dur="1000" delay="4000" direction="alternate" fill="both" repeat="indefinite"></a-animation>
+            <a-animation property="rotation" to="0 0 45" dur="800" delay="4000" direction="alternate" repeat="indefinite" easing="linear"></a-animation>
+        </a-cylinder>-->
         <!--<a-cylinder height="8" radius="0.015" color="white" position="-6.5 5.8 -10" rotation="0 0 -45"></a-cylinder>-->
-
-        <a-entity line="start: 0 4 -5; end: -4 4 -5; color: white"></a-entity>
 
         <!-- logo -->
         <!-- animation to drop logo from sky -->
@@ -238,11 +239,11 @@ Notes
         </a-entity>-->
 
         <!-- frame -->
-        <a-box height="10" width="0.2" depth="0.2" position="5 3.9 -9" color="chrome"></a-box>
+        <!--<a-box height="10" width="0.2" depth="0.2" position="5 3.9 -9" color="chrome"></a-box>
         <a-box height="10" width="0.2" depth="0.2" position="5 3.9 -11" color="chrome"></a-box>
         <a-box height="10" width="0.2" depth="0.2" position="-5 3.9 -9" color="chrome"></a-box>
         <a-box height="10" width="0.2" depth="0.2" position="-5 3.9 -11" color="chrome"></a-box>
-        <a-box height="0.15" width="10" depth="2.2" position="0 8.83 -10.1" color="chrome" rotation="2.2 0 0"></a-box>
+        <a-box height="0.15" width="10" depth="2.2" position="0 8.83 -10.1" color="chrome" rotation="2.2 0 0"></a-box>-->
 
         <!-- floor -->
         <a-entity

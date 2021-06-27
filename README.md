@@ -1,4 +1,4 @@
 # newtons-cradle
-A-Frame project representing Newton's Cradle
+a-frame animation of newton's cradle
 
 ![](cradle2.gif)
